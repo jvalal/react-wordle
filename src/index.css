@@ -33,8 +33,8 @@
 @keyframes revealAbsentCharCell {
   0% {
     transform: rotateX(0deg);
-    background-color: theme('colors.black.000');
-    border-color: theme('colors.black.000');
+    background-color: theme('colors.slate.400');
+    border-color: theme('colors.slate.400');
   }
 
   100% {
