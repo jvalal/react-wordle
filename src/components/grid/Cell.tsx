@@ -22,9 +22,9 @@ export const Cell = ({
   const animationDelay = `${position * REVEAL_TIME_MS}ms`
 
   const classes = classnames(
-    'w-12 h-12 border-solid border-1 flex items-center justify-center mx-0.5 text-4xl font-bold rounded dark:text-white',
+    'w-12 h-12 border-solid border-2 flex items-center justify-center mx-0.5 text-4xl font-bold rounded dark:text-white',
     {
-      'bg-white dark:bg-red-900 border-neutral-700 dark:border-neutral-900':
+      'bg-white dark:bg-neutral-900 border-neutral-700 dark:border-neutral-900':
         !status,
       'border-black dark:border-slate-100': value && !status,
       'absent shadowed bg-slate-400 dark:bg-slate-700 text-white border-slate-400 dark:border-slate-700':
