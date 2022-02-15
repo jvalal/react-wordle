@@ -5,7 +5,6 @@ import {
   MoonIcon,
   CakeIcon,
   AcademicCapIcon,
-  badge-checkIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
@@ -220,7 +219,7 @@ function App() {
             onClick={() => handleHardMode(!isHardMode)}
           />
         ) : (
-          <badge-checkIcon
+          <CakeIcon
             className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
             onClick={() => handleHardMode(!isHardMode)}
           />
