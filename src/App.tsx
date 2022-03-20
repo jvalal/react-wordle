@@ -244,6 +244,7 @@ function App() {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
+      <hr></hr>
       <Grid
         guesses={guesses}
         currentGuess={currentGuess}
