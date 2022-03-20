@@ -15,7 +15,7 @@ type Props = {
 export const Key = ({
   children,
   status,
-  width = 48,
+  width = 68,
   value,
   onClick,
   isRevealing,
