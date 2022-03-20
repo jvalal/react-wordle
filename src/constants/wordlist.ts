@@ -76,7 +76,7 @@ export const WORDS = [
   'table',
   'early',
   'trees',
-  'short',
+  // 'short',
   'hands',
   'state',
   'black',
