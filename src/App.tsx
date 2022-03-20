@@ -245,6 +245,7 @@ function App() {
         />
       </div>
       <hr></hr>
+      <br></br>
       <Grid
         guesses={guesses}
         currentGuess={currentGuess}
