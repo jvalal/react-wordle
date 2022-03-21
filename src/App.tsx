@@ -245,7 +245,6 @@ function App() {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
-      <br></br>
       <hr></hr>
       <br></br>
       
