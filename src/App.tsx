@@ -241,12 +241,10 @@ function App() {
         )}
 
         <ChartBarIcon
-          className="h-6 w-6 pb-4 mr-3 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
-      <hr style="height:1px; border:none; color:#577; background-color:#000;">
-        </hr>
       <br></br>
       <Grid
         guesses={guesses}
