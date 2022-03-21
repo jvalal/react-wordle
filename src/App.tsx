@@ -211,7 +211,7 @@ function App() {
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div className="flex w-100 mx-auto items-center mb-0 mt-0">
       <InformationCircleIcon
-          className="justify-start h-8 w-8 ml-10 mr-20 cursor-pointer dark:stroke-white"
+          className="justify-start h-8 w-8 mr-20 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <h1 className="text-2xl text-center grow font-bold dark:text-white">
@@ -219,29 +219,29 @@ function App() {
         </h1>
         {isHardMode ? (
           <AcademicCapIcon
-            className="h-8 w-8 mr-8 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
             onClick={() => handleHardMode(!isHardMode)}
           />
         ) : (
           <CakeIcon
-            className="h-8 w-8 mr-8 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
             onClick={() => handleHardMode(!isHardMode)}
           />
         )}
         {isDarkMode ? (
           <SunIcon
-            className="h-8 w-8 mr-8 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         ) : (
           <MoonIcon
-            className="h-8 w-8 mr-8 cursor-pointer"
+            className="h-8 w-8 mr-4 cursor-pointer"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
 
         <ChartBarIcon
-          className="h-8 w-8 mr-3 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
