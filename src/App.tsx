@@ -214,7 +214,7 @@ function App() {
           className="h-6 w-6 mr-10 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
-        <h1 className="text-2xl ml-0 grow font-bold dark:text-white">
+        <h1 className="text-2xl text-center grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>
         {isHardMode ? (
