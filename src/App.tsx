@@ -209,12 +209,12 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-0 mt-0">
+      <div className="flex w-100 mx-auto items-center mb-0 mt-0">
       <InformationCircleIcon
-          className="h-6 w-6 mr-20 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-10 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
-        <h1 className="text-2xl ml-4.5 grow font-bold dark:text-white">
+        <h1 className="text-2xl ml-0 grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>
         {isHardMode ? (
