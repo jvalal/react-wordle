@@ -219,29 +219,29 @@ function App() {
         </h1>
         {isHardMode ? (
           <AcademicCapIcon
-            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-10 cursor-pointer dark:stroke-white"
             onClick={() => handleHardMode(!isHardMode)}
           />
         ) : (
           <CakeIcon
-            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-10 cursor-pointer dark:stroke-white"
             onClick={() => handleHardMode(!isHardMode)}
           />
         )}
         {isDarkMode ? (
           <SunIcon
-            className="h-8 w-8 mr-4 cursor-pointer dark:stroke-white"
+            className="h-8 w-8 mr-10 cursor-pointer dark:stroke-white"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         ) : (
           <MoonIcon
-            className="h-8 w-8 mr-4 cursor-pointer"
+            className="h-8 w-8 mr-10 cursor-pointer"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
 
         <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+          className="h-8 w-8 mr-3 cursor-pointer dark:stroke-white"
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
