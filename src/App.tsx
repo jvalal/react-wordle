@@ -245,8 +245,6 @@ function App() {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
-      <hr style="height:1px; border:none; color:#000; background-color:#000;">
-      </hr>
       <br></br>
       <Grid
         guesses={guesses}
