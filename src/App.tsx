@@ -246,11 +246,7 @@ function App() {
         />
       </div>
       <br></br>
-
-      <hr width="70%"
-        size="20" color="blue"
-        noshade></hr>
-        
+      
       <Grid
         guesses={guesses}
         currentGuess={currentGuess}
