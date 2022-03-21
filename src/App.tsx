@@ -209,9 +209,9 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-10 mx-auto items-center mb-0 mt-0">
+      <div className="flex w-100 mx-auto items-center mb-0 mt-0">
       <InformationCircleIcon
-          className="justify-start h-8 w-8 mr-20 cursor-pointer dark:stroke-white"
+          className="justify-start h-10 w-10 mr-20 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <h1 className="text-2xl text-center grow font-bold dark:text-white">
