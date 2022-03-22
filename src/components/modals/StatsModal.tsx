@@ -10,6 +10,7 @@ import {
   GUESS_DISTRIBUTION_TEXT,
   NEW_WORD_TEXT,
   SHARE_TEXT,
+  MORE_TEXT,
 } from '../../constants/strings'
 
 type Props = {
