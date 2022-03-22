@@ -53,16 +53,7 @@ export const StatsModal = ({
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
-      <button
-            type="button"
-            className="mt-2 w-full rounded-md border border-transparent px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-sm"
-            onClick={() => {
-              shareStatus(guesses, isGameLost, isHardMode)
-              handleShare()
-            }}
-          >
-            {MORE_TEXT}
-          </button>
+      
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
@@ -73,9 +64,19 @@ export const StatsModal = ({
               date={tomorrow}
               daysInHours={true}
             />
+            <button
+            type="button"
+            className="mt-2 w-full rounded-md border border-transparent px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-sm"
+            onClick={() => {
+              shareStatus(guesses, isGameLost, isHardMode)
+              handleShare()
+            }}
+          >
+            {MORE_TEXT}
+          </button>
           </div>
-          <StatBar gameStats={gameStats} />
         </div>
+        <StatBar gameStats={gameStats} />
         
       )}
     </BaseModal>
