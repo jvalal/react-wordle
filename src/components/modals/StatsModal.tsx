@@ -49,8 +49,7 @@ export const StatsModal = ({
     <BaseModal
       title={STATISTICS_TITLE}
       isOpen={isOpen}
-      handleClose={handleClose}
-    >
+      handleClose={handleClose}>
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
