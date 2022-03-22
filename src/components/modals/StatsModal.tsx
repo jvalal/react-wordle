@@ -9,7 +9,7 @@ import {
   STATISTICS_TITLE,
   GUESS_DISTRIBUTION_TEXT,
   NEW_WORD_TEXT,
-  SHARE_TEXT,
+  // SHARE_TEXT,
   MORE_TEXT,
 } from '../../constants/strings'
 
@@ -74,7 +74,7 @@ export const StatsModal = ({
               handleShare()
             }}
           >
-            {SHARE_TEXT}
+            {MORE_TEXT}
           </button>
 
           
