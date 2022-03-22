@@ -59,7 +59,7 @@ export const StatsModal = ({
       <Histogram gameStats={gameStats} />
       <button
             type="button"
-            className="mt-2 w-full rounded-md border border-transparent px-4 py-2 bg-sky-600 text-base font-xl text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-sm"
+            className="mt-2 w-full rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-sm"
             onClick={() => {
               shareStatus(guesses, isGameLost, isHardMode)
               handleShare()
