@@ -76,7 +76,6 @@ export const StatsModal = ({
           </button>
           </div>
         </div>
-        <StatBar gameStats={gameStats} />
         
       )}
     </BaseModal>
