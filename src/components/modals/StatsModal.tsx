@@ -50,10 +50,12 @@ export const StatsModal = ({
       title={STATISTICS_TITLE}
       isOpen={isOpen}
       handleClose={handleClose}>
+        
+      <StatBar gameStats={gameStats} />
+
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
-      
       <Histogram gameStats={gameStats} />
       <button
             type="button"
@@ -69,7 +71,6 @@ export const StatsModal = ({
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
           <div>
             <h5>{NEW_WORD_TEXT}</h5>
-            <StatBar gameStats={gameStats} />
             <Countdown
               className="text-lg font-medium text-gray-900 dark:text-gray-100"
               date={tomorrow}
