@@ -75,7 +75,10 @@ export const StatsModal = ({
           >
             {SHARE_TEXT}
           </button>
+
+          
         </div>
+        
       )}
     </BaseModal>
   )
