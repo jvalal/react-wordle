@@ -1,6 +1,6 @@
 export const GAME_TITLE = 'Wordle 3k TEST'
 
-export const WIN_MESSAGES = ['Great Job!', 'Awesome', 'Well done! BOOM!']
+export const WIN_MESSAGES = ['⭐️ Great Job! ⭐️', 'Awesome 🏆', 'Well done! BOOM!💥']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
 export const ABOUT_GAME_MESSAGE = 'About this game'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
