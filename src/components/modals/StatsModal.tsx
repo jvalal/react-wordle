@@ -12,6 +12,8 @@ import {
   SHARE_TEXT,
   // MORE_TEXT,
 } from '../../constants/strings'
+import { BrowserRouter, Route, NavLink } from "react-router-dom";
+
 
 type Props = {
   isOpen: boolean
