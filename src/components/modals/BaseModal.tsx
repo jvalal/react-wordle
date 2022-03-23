@@ -17,14 +17,14 @@ export const BaseModal = ({ title, children, isOpen, handleClose }: Props) => {
         className="fixed z-10 inset-0 overflow-y-auto"
         onClose={handleClose}
       >
-        <div className="flex items-center justify-center min-h-screen py-10 px-4 text-center sm:block sm:p-0">
+        <div className="flex items-center justify-center min-h-screen py-1 px-4 text-center sm:block sm:p-0">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
             enterFrom="opacity-0"
-            enterTo="opacity-100"
+            enterTo="opacity-90"
             leave="ease-in duration-200"
-            leaveFrom="opacity-100"
+            leaveFrom="opacity-90"
             leaveTo="opacity-0"
           >
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
