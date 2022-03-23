@@ -1,7 +1,4 @@
 import Countdown from 'react-countdown'
-import React, { useEffect } from "react";
-
-
 import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
@@ -79,26 +76,7 @@ export const StatsModal = ({
               className="text-lg font-medium text-gray-900 dark:text-gray-100"
               date={tomorrow}
               daysInHours={true}
-
-              function Contact() {
-
-                useEffect(() => {
-                  window.location.href = "https://google.com/contact";
-                }, []);
-              
-                return (
-                  <div>
-                    <h2>Contact</h2>
-                  </div>
-                );
-              }
-              
-              export default Contact;
-
-
             />
-
-                  
             
           </div>
         </div>
