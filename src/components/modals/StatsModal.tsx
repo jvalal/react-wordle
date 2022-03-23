@@ -2,7 +2,7 @@ import Countdown from 'react-countdown'
 import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
-import { shareStatus } from '../../lib/share'
+// import { shareStatus } from '../../lib/share'
 import { tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
@@ -57,14 +57,15 @@ export const StatsModal = ({
         {GUESS_DISTRIBUTION_TEXT}
       </h4>
       <Histogram gameStats={gameStats} />
+
       <button
             type="button"
             className="mt-2 w-full rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
-
-            onClick={() => {
+            <td onClick={()=> window.open("http://github.com", "_blank")}>text</td>
+            {/* onClick={() => {
               shareStatus(guesses, isGameLost, isHardMode)
               handleShare()
-            }}
+            }} */}
           >
             {SHARE_TEXT}
           </button>
