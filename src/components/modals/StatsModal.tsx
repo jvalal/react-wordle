@@ -13,6 +13,9 @@ import {
   // MORE_TEXT,
 } from '../../constants/strings'
 
+interface ILink extends HTMLAttributes<HTMLAnchorElement> {}
+
+
 type Props = {
   isOpen: boolean
   handleClose: () => void
@@ -77,9 +80,20 @@ export const StatsModal = ({
               date={tomorrow}
               daysInHours={true}
             />
-            
           </div>
         </div>
+        
+        interface INavigationProps {
+          links: ILink[];
+        }
+        
+        const Navigation = ({ links }: INavigationProps) => (
+          <nav>
+            {links.map((link) => (
+              <a {...link} />
+            ))}
+          </nav>
+        );
         
         
       )}
