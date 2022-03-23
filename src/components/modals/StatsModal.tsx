@@ -12,8 +12,6 @@ import {
   SHARE_TEXT,
   // MORE_TEXT,
 } from '../../constants/strings'
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
-
 
 type Props = {
   isOpen: boolean
@@ -80,16 +78,6 @@ export const StatsModal = ({
               daysInHours={true}
             />
             
-            <Route path='/some-path' component={() => { 
-  var link = document.createElement('a');
-  link.href = 'http://google.com';
-  document.body.appendChild(link);
-
-  link.click();
-  return null;
-}} />
-
-
           </div>
         </div>
         
