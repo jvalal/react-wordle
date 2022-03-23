@@ -77,8 +77,7 @@ export const StatsModal = ({
               date={tomorrow}
               daysInHours={true}
             />
-            <Link to="/about" target="_blank">About</Link>
-
+            
           </div>
         </div>
         
