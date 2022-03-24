@@ -12,8 +12,6 @@ import {
   SHARE_TEXT,
   // MORE_TEXT,
 } from '../../constants/strings'
-import {Route,} from "react-router-dom"
-
 
 type Props = {
   isOpen: boolean
@@ -71,15 +69,7 @@ export const StatsModal = ({
           >            
             {SHARE_TEXT}
           </button>
-
-              <Route path='/external-site' >
-                {() => { 
-                    useEffect(() => {
-                      window.location.href = 'https://example.com'; 
-                    }, [])
-                    return null;
-                }}
-              </Route>
+              
 
 
           
