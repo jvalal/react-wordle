@@ -13,10 +13,6 @@ import {
   // MORE_TEXT,
 } from '../../constants/strings'
 
-import {
-  Route,
-} from "react-router-dom";
-
 type Props = {
   isOpen: boolean
   handleClose: () => void
@@ -82,13 +78,7 @@ export const StatsModal = ({
               date={tomorrow}
               daysInHours={true}
             />
-
-
-
-            <Route path='/privacy-policy' component={() => { 
-     window.location.href = 'https://example.com/1234'; 
-     return null;
-}}/>
+            
             
           </div>
         </div>
