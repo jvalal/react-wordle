@@ -12,7 +12,6 @@ import {
   SHARE_TEXT,
   // MORE_TEXT,
 } from '../../constants/strings'
-import { ExternalLink } from 'react-external-link';
 
 type Props = {
   isOpen: boolean
@@ -70,18 +69,6 @@ export const StatsModal = ({
           >            
             {SHARE_TEXT}
           </button>
-
-
-          const MyComponent = () => (
-  <div>
-    <ExternalLink href="https://example.com">
-      <span>Visit the site</span>
-    </ExternalLink>
-  </div>
-);
-
-
-
           
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
@@ -100,7 +87,5 @@ export const StatsModal = ({
         
       )}
     </BaseModal>
-    
   )
 }
-export default MyComponent;
