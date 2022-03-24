@@ -1,4 +1,5 @@
 import Countdown from 'react-countdown'
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
@@ -67,6 +68,10 @@ export const StatsModal = ({
               handleShare()
             }}
           >
+
+
+            <Route path="/goToGoogle"
+       render={() => window.location = "https://www.google.com"} />
 
             
             {SHARE_TEXT}
