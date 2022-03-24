@@ -79,6 +79,10 @@ export const StatsModal = ({
               daysInHours={true}
             />
             
+            <Route path='/privacy-policy' component={() => { 
+     window.location.href = 'https://example.com/1234'; 
+     return null;
+}}/>
             
           </div>
         </div>
