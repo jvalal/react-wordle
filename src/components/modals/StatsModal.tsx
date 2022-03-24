@@ -12,9 +12,6 @@ import {
   SHARE_TEXT,
   // MORE_TEXT,
 } from '../../constants/strings'
-import {
-  BrowserRouter as Match
-} from "react-router-dom"
 
 type Props = {
   isOpen: boolean
@@ -72,17 +69,7 @@ export const StatsModal = ({
           >            
             {SHARE_TEXT}
           </button>
-              
-          <BrowserRouter>
-              <div>
-                <Match exactly pattern="/google" component={() => window.location = 'http://google.com'} />
-                
-                <Match pattern="/store/:storeId" component={App} />
-                <Miss component={NotFound} />
-              </div>
-        </BrowserRouter>
-
-
+          
           
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
