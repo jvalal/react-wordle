@@ -79,8 +79,7 @@ export const StatsModal = ({
               daysInHours={true}
             />
             
-            <a target="_blank" href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies">Policies</a>
-
+   
           </div>
         </div>
         
