@@ -66,12 +66,13 @@ export const StatsModal = ({
               shareStatus(guesses, isGameLost, isHardMode)
               handleShare()
             }}
-          >
-            
-
-            
+          >            
             {SHARE_TEXT}
           </button>
+
+
+
+          
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
           <div>
