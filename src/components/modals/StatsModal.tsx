@@ -70,15 +70,6 @@ export const StatsModal = ({
             {SHARE_TEXT}
           </button>
           
-
-          const openInNewTab = (url) => {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-  if (newWindow) newWindow.opener = null
-}
-
-//Then add to your onClick
-onClick={() => openInNewTab('https://stackoverflow.com')}
-
           
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
