@@ -69,6 +69,12 @@ export const StatsModal = ({
         {SHARE_TEXT}
       </button>
 
+      class RedirectPage extends React.Component {
+  componentDidMount(){
+    window.location.replace('https://www.google.com')
+  }
+}
+
 
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
