@@ -69,11 +69,7 @@ export const StatsModal = ({
         {SHARE_TEXT}
       </button>
 
-      class RedirectPage extends React.Component {
-  componentDidMount(){
-    window.location.replace('https://www.google.com')
-  }
-}
+
 
 
       {(isGameLost || isGameWon) && (
