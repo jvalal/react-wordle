@@ -70,11 +70,8 @@ export const StatsModal = ({
             {SHARE_TEXT}
           </button>
           
-            handleClick() {
-              // do something react js meaningful, more useful Promises, conditions if/else, whatever, and then
-              window.location.assign('https://www.pakainfo.com');
-            }
 
+          
           
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
