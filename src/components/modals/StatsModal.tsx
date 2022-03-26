@@ -34,6 +34,13 @@ export const StatsModal = ({
   handleShare,
   isHardMode,
 }: Props) => {
+
+  const openInNewTab = () => {
+    const anchor = document.createElement('a');
+    anchor.href = 'https://www.youtube.com/';
+    anchor.target = '_blank'
+    anchor.click();
+  }
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -68,6 +75,16 @@ export const StatsModal = ({
       >
         {SHARE_TEXT}
       </button>
+
+      <button
+              type='button'
+              className="mt-2 w-full rounded-md border border-transparent px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              onClick={() => {
+                openInNewTab();
+              }}
+            >
+              Play Again
+            </button>
 
 
 
