@@ -37,7 +37,7 @@ export const StatsModal = ({
 
   const openInNewTab = () => {
     const anchor = document.createElement('a');
-    anchor.href = 'https://www.youtube.com/';
+    anchor.href = 'https://www.more.wordle3.in/';
     anchor.target = '_blank'
     anchor.click();
   }
