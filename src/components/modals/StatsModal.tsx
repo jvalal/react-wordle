@@ -41,6 +41,7 @@ export const StatsModal = ({
     anchor.target = '_blank'
     anchor.click();
   }
+  
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -65,27 +66,29 @@ export const StatsModal = ({
       </h4>
       <Histogram gameStats={gameStats} />
 
-      <button
-        type="button"
-        className="mt-2 w-1/3 pr-10 rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
-        onClick={() => {
-          shareStatus(guesses, isGameLost, isHardMode);
-          handleShare();
-        }}
-      >
-        {SHARE_TEXT}
-      </button>
+      <div class="grid gap-x-8 gap-y-4 grid-cols-2">
+        <button
+          type="button"
+          className="mt-2 w-1/3 rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
+          onClick={() => {
+            shareStatus(guesses, isGameLost, isHardMode);
+            handleShare();
+          }}
+        >
+          {SHARE_TEXT}
+        </button>
 
-      <button
-              type='button'
-              className="mt-2 w-1/3 rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
-              onClick={() => {
-                openInNewTab();
-              }}
-            >
-              Play Again
-            </button>
-
+        <button
+                type='button'
+                className="mt-2 w-1/3 rounded-md border border-transparent px-2 py-2 bg-sky-600 text-xl font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
+                onClick={() => {
+                  openInNewTab();
+                }}
+              >
+              Play More 
+        </button>
+      </div>
+      
 
 
 
