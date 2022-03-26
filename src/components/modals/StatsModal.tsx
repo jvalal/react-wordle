@@ -35,12 +35,12 @@ export const StatsModal = ({
   isHardMode,
 }: Props) => {
 
-  // const openInNewTab = () => {
-  //   const anchor = document.createElement('a');
-  //   anchor.href = 'https://www.youtube.com/';
-  //   anchor.target = '_blank'
-  //   anchor.click();
-  // }
+  const openInNewTab = () => {
+    const anchor = document.createElement('a');
+    anchor.href = 'https://www.youtube.com/';
+    anchor.target = '_blank'
+    anchor.click();
+  }
 
   if (gameStats.totalGames <= 0) {
     return (
@@ -77,7 +77,7 @@ export const StatsModal = ({
         {SHARE_TEXT}
       </button>
 
-      {/* <button
+      <button
               type='button'
               className=" mt-2 w-1/3 rounded-md border border-sky500 px-1 py-1 bg-sky-600 text-l font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:text-xl"
               onClick={() => {
@@ -85,7 +85,7 @@ export const StatsModal = ({
               }}
             >
              Play More 
-            </button> */}
+            </button>
 
 
 
