@@ -1,6 +1,6 @@
 {
-  "short_name": "Wrodle 3K Game",
-  "name": "Worlde 3K Game",
+  "short_name": "Wrodle 5000 Game",
+  "name": "Worlde 5000 Game",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,10 +13,10 @@
       "sizes": "192x192"
     },
     {
-    //   "src": "logo512.png",
-    //   "type": "image/png",
-    //   "sizes": "512x512"
-    // }
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
